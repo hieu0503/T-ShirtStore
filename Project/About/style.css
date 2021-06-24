@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1704px !important;
+  margin: 50px;
+}
+
+.top {
+  padding-top: 50px;
+  border-bottom: 8px solid orange;
+  z-index: 1;
+}
+.top h1 {
+  font-size: 50px;
+  margin: 0 0 -20px;
+  z-index: 2;
+}
+.bottom {
+  display: flex;
+  padding-top: 100px;
+}
+.bottom-left {
+  font-size: 15px;
+  text-align: center;
+}
+.bottom-left p {
+  text-align: left;
+}
