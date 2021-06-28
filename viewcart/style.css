@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin: 0px 80px 0px 80px;
+    line-height: 80px;
+    width: 1744px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    background-color: whitesmoke;
+}
+.menu .logo{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    height: 45px;
+    line-height: 45px;
+    width: 120px;
+    text-align: center;
+}
+.menu .logo:hover{
+    color: #FF6701;
+}
+.menu #main-menu ul{
+    display: flex;
+}
+.menu #main-menu ul li{
+    list-style: none;
+}
+.menu #main-menu ul li a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+ul #menu1{
+    display: flex;
+    margin-left: 400px;
+}
+ul #menu1 a{
+    color: black;
+    padding-right: 30px;
+}
+ul #menu1 a:hover{
+    color: #FF6701;
+}
+ul #btn-login{
+    margin: 00px 200px 0px 40px;
+}
+ul #btn-login a{
+    color: black;
+}
+#btn-login i{
+    margin-right: 10px;
+}
+#btn-login span:hover{
+    color: grey;
+}
+#icon-cart a{
+    color: black;
+}
+.header{
+    background-color: #FF6701;
+    height: 270px;
+    position: static;
+    margin: 80px 80px 13px 80px;
+    color: white;
+}
+.header #title {
+    text-align: center;
+
+    font-size: 25px;
+    padding-top: 50px;
+}
+.header #title p{
+    font-weight: 600;
+    margin: 10px 0px 50px 0px;
+}
+.header #category ul{
+    display: flex;
+    margin-left: 450px;
+}
+.header #category ul li{
+    list-style: none;
+    height: 40px;
+    width: 200px;
+    border: 3px solid white;
+    margin-right: 100px;
+}
+.header #category ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    justify-content: center;
+}
+ .header #category a:hover{
+    background-color: white;
+    color: #FF6701;
+}
+.banner{
+    margin: 0px 80px 150px 80px;
+}
+.banner #img2{
+    margin: 0px 8px 0px 8px;
+}
+.title{
+    margin: 0px 80px 150px 80px;
+}
+.title h1{
+    color: black;
+    font-size: 90px;
+    text-align: center;
+}
+.title #line{
+    width: 750px;
+    background-color: #FF6701;
+    height: 10px;
+    position: static;
+    margin-top: -30px;
+    margin-left: 490px;
+}
+.main {
+    margin: 100px 80px 0px 80px;
+    position: relative;
+
+}
+.main .mycart { 
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    width: 60%;
+}
+.main .order {
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+}
+.footer{
+    background-color: black;
+    height: 350px;
+    margin: 0px 80px 80px 80px;
+}
+.footer #footer-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer #footer-service ul{
+    margin-top: 50px;
+}
+.footer #footer-service ul li{
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.footer #footer-service ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer #footer-service #footer-service1{
+    color: white;
+    margin-top: 100px;
+}
+.footer #footer-service #footer-service1 input{
+    height: 40px;
+    width: 250px;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+}
+.footer #footer-service #footer-service1 input::placeholder{
+    color: white;
+    padding-left: 30px;
+}
+.footer #footer-service #footer-service1 button{
+    display: flex;
+    margin-top: 5px;
+    border: 1px solid #FF6701;
+    font-size: 15px;
+}
+.footer #footer-service #footer-service1 button a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    width: 255px;
+    background-color: #FF6701;
+}
+.footer #footer-service #footer-service1 button a:hover{
+    background-color: #FFC288;
+}
+.social{
+    position: fixed;
+    right: 30px;
+    top: 150px;
+}
+.social ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.social ul li a{
+    text-decoration: none;
+    color: black;
+}
+.chat{
+    height: 60px;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+.chat a{
+    text-decoration: none;
+    color: white;
+    
+}
