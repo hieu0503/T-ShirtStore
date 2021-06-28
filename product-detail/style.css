@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin: 0px 80px 0px 80px;
+    line-height: 80px;
+    width: 1744px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+.menu .logo{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    height: 45px;
+    line-height: 45px;
+    width: 120px;
+    text-align: center;
+}
+.menu .logo:hover{
+    color: #FF6701;
+}
+.menu .main-menu ul{
+    display: flex;
+}
+.menu .main-menu ul li{
+    list-style: none;
+}
+.menu .main-menu ul li a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+ul .option-menu{
+    display: flex;
+    margin-left: 400px;
+}
+ul .option-menu a{
+    color: black;
+    padding-right: 30px;
+}
+ul .option-menu a:hover{
+    color: #FF6701;
+}
+ul .btn-login{
+    margin-right: 230px;
+}
+ul .btn-login a{
+    color: black;
+}
+.btn-login i{
+    margin-right: 10px;
+    font-size: 30px;
+    
+}
+.btn-login span:hover{
+    color: grey;
+}
+.icon-cart a{
+    color: black;
+}
+.icon-cart i{
+    font-size: 35px;
+}
+.footer{
+    background-color: black;
+    height: 350px;
+    margin: -50px 80px 80px 80px;
+}
+.footer .footer-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer-service ul{
+    margin-top: 65px;
+}
+.footer .footer-service ul li{
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.footer .footer-service ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-service .footer-service1{
+    color: white;
+    margin-top: 80px;
+}
+.footer .footer-service .footer-service1 input{
+    height: 40px;
+    width: 256px;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+}
+.footer .footer-service .footer-service1 input::placeholder{
+    color: white;
+    padding-left: 20px;
+}
+.footer .footer-service .footer-service1 button{
+    display: flex;
+    margin-top: 5px;
+    border: 1px solid #FF6701;
+    font-size: 15px;
+}
+.footer .footer-service .footer-service1 button a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    width: 255px;
+    background-color: #FF6701;
+}
+.footer .footer-service .footer-service1 button a:hover{
+    background-color: #FFC288;
+}
+.social{
+    position: fixed;
+    right: 30px;
+    top: 150px;
+}
+.social ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.social ul li a{
+    text-decoration: none;
+    color: black;
+}
+.chat{
+    height: 60px;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+.chat a{
+    text-decoration: none;
+    color: white;
+    
+}
+.products-detail{
+    margin: 150px 500px 150px 500px;
+}
+.products-detail .name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.products-detail .name a{
+    text-decoration: none;
+    color: black;
+}
+.products-detail .name span{
+    color: grey;
+}
+.detail{
+    display: flex;
+}
+.detail .image{
+    position: relative;
+    overflow: hidden;
+}
+.detail .image .img-product-hover {
+    transition: 0s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.detail .image:hover .img-product {
+    opacity: 0;
+}
+
+.detail .image:hover .img-product-hover {
+    opacity: 1;
+}
+.detail .image p{
+    margin-top: 30px;
+}
+.detail p{
+    color: #444444;
+    font-size: 14px;
+}
+.detail .des{
+    margin-left: 50px;
+    width: 350px;
+}
+.detail .des h1{
+    font-size: 45px;
+}
+
+.detail .des .call i{
+    font-size: 20px;
+    color: white;
+    background-color: greenyellow;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.detail .des .price{
+    color: #FF6701;
+    font-size: 20px;
+}
+.detail .des select{
+    height: 40px;
+    width: 350px;
+    margin: -10px 0px 30px 0px;
+}
+.detail .des select option{
+    font-size: 15px;
+}
+.detail .des .add {
+    display: flex;
+    justify-content: space-between;
+}
+.detail .des .add  span a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+}
+.detail .des .add span {
+    background-color: #FF6701;
+    width: 305px;
+    height: 40px;
+}
+.detail .des .add span:hover{
+    background-color: #F5A962;
+}
+.detail .des .add i{
+    border: 1px solid #FF6701;
+    color: #FF6701;
+    padding: 9px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.detail .des .buy{
+    height: 40px;
+    background-color: black;
+    margin: 10px 0px 50px 0px;
+}
+.detail .des .buy:hover{
+    background-color: #343A40;
+}
+.detail .des .buy a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+}
+.products-detail h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.carousel-inner img{
+    height: 700px;
+}
+.option-color-icon {
+    margin: -10px 0px 20px 0px;
+    
+}
+.option-color-icon input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.option-color-icon >input:active {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+}
+.option-color-icon >input:hover{
+    width: 25px;
+    height: 25px;
+}
+.red {
+    background-color: #000000;
+}
+.orange {
+    background-color: #FF6701;
+}
+.blue {
+    background-color: #2f47c2;
+}
+.yellow {
+    background-color: yellow;
+}
+.option-color-icon a i:hover{
+    font-size: 25px;
+    border: 1px solid black;
+}
+.btn-count {
+    height: 40px;
+    width: 70px;
+    position: relative;
+    margin: -10px 0px 30px 0px;
+}
+.btn-count input{
+    height: 40px;
+    width: 70px;
+    padding-left: 10px;
+}
+.btn-count i {
+    position: absolute;
+    right: 8px;
+    color: gray;
+}
+.btn-count #btn-reduce-product{
+    bottom: 3px;
+}
+.btn-count #btn-add-product{
+    top: 3px;
+}
+
+.info{
+    cursor: pointer;
+    position: relative;
+}
+.info .icon{
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-content{
+    display: none;
+    overflow: hidden;
+}

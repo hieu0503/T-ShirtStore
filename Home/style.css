@@ -14,6 +14,7 @@
     position: fixed;
     top: 0;
     background-color: whitesmoke;
+    z-index: 1;
 }
 .menu .logo{
     background-color: black;
@@ -28,52 +29,56 @@
 .menu .logo:hover{
     color: #FF6701;
 }
-.menu #main-menu ul{
+.menu .main-menu ul{
     display: flex;
 }
-.menu #main-menu ul li{
+.menu .main-menu ul li{
     list-style: none;
 }
-.menu #main-menu ul li a{
+.menu .main-menu ul li a{
     text-decoration: none;
     margin-right: 50px;
 }
-ul #menu1{
+ul .option-menu{
     display: flex;
     margin-left: 400px;
 }
-ul #menu1 a{
+ul .option-menu a{
     color: black;
     padding-right: 30px;
 }
-ul #menu1 a:hover{
+ul .option-menu a:hover{
     color: #FF6701;
 }
-ul #btn-login{
-    margin: 00px 200px 0px 40px;
+ul .btn-login{
+    margin-right: 230px;
 }
-ul #btn-login a{
+ul .btn-login a{
     color: black;
 }
-#btn-login i{
+.btn-login i{
     margin-right: 10px;
+    font-size: 30px;
+    
 }
-#btn-login span:hover{
+.btn-login span:hover{
     color: grey;
 }
-#icon-cart a{
+.icon-cart a{
     color: black;
+}
+.icon-cart i{
+    font-size: 35px;
 }
 .header{
     background-color: #FF6701;
     height: 270px;
-    position: static;
-    margin: 80px 80px 13px 80px;
+    margin: 80px 80px 10px 80px;
     color: white;
 }
 .header #title {
     text-align: center;
-
+    
     font-size: 25px;
     padding-top: 50px;
 }
@@ -128,7 +133,7 @@ ul #btn-login a{
 .content{
     margin: 0px 80px 0px 80px;
 }
-#products .products-list {
+/* #products .products-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -150,6 +155,81 @@ ul #btn-login a{
 #products .products-list #money{
     color: #FF6701;
     margin-top: 10px;
+} */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 24%;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card .img {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card .img p a {
+    position: absolute;
+    bottom: -20%;
+    background-color:whitesmoke;
+    transition: all 0.5s;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.product-card .img:hover p a {
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    padding-top: 4%;
+    font-size: 20px;
+}
+
+.product-card .img .img-product-hover {
+    transition: 0s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-card .img:hover .img-product {
+    opacity: 0;
+}
+
+.product-card .img:hover .img-product-hover {
+    opacity: 1;
+}
+
+.product-card .sell {
+    width: 95px;
+    height: 35px;
+    background-color: #FF6701;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .product-title{
+    margin: 10px 0px 10px 0px;
+}
+.product-card .price {
+    color: orange;
 }
 .content #btn-all{
     display: flex;
@@ -279,3 +359,61 @@ ul #btn-login a{
     color: white;
     
 }
+/* .menu1 {
+    height: 76px;
+    line-height: 76px;
+    white-space: nowrap;
+    position: fixed;
+}
+
+.header-main {
+    height: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.header-main .header-logo {
+    height: 48px;
+    line-height: 48px;
+    white-space: nowrap;
+    width: 98px;
+    background-color: black;
+    text-align: center;
+    margin-left: 0;
+}
+
+.header-main .header-logo p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-main .header-logo p:hover {
+    color: orange;
+}
+
+.navbar,
+.navbar-menu,
+.navbar-log {
+    display: flex;
+}
+
+.navbar-log i {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.navbar ul li {
+    margin-right: 60px;
+}
+
+.navbar ul li a:hover {
+    color: orange;
+}
+
+.header-cart {
+    font-size: 35px;
+    margin-right: 0;
+} */
+
+
