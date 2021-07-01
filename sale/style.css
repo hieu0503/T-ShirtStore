@@ -8,67 +8,110 @@
     margin: auto 76px;
 }
 
-.header {
-    height: 76px;
-    line-height: 76px;
-    white-space: nowrap;
-}
-
-.header-main {
-    height: 76px;
+/* menu/social */
+.menu {
     display: flex;
     align-items: center;
+    z-index: 20;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    justify-content: space-between;
 }
 
-.header-main .header-logo {
-    height: 48px;
-    line-height: 48px;
-    white-space: nowrap;
-    width: 98px;
+.menu .logo {
+    margin-left: 3em;
     background-color: black;
-    text-align: center;
-    margin-left: 0;
-}
-
-.header-main .header-logo p {
     color: white;
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 25px;
     font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    width: 120px;
+    text-align: center;
 }
 
-.header-main .header-logo p:hover {
-    color: orange;
+.menu .logo:hover {
+    color: #FF6701;
 }
 
-.navbar,
-.navbar-menu,
-.navbar-log {
+.menu #icon-cart {
+    margin-right: 3em;
+}
+
+.menu #main-menu ul {
     display: flex;
 }
 
-.navbar-log i {
-    font-size: 25px;
-    padding-right: 10px;
+.menu #main-menu ul li {
+    list-style: none;
 }
 
-.navbar ul li {
-    margin-right: 60px;
+.menu #main-menu ul li a {
+    text-decoration: none;
+    margin-right: 50px;
 }
 
-.navbar ul li a:hover {
-    color: orange;
+ul #menu1 {
+    display: flex;
+    margin-left: 400px;
 }
 
-.header-cart {
-    font-size: 35px;
-    margin-right: 0;
+ul #menu1 a {
+    color: black;
+    padding-right: 30px;
+}
+
+ul #menu1 a:hover {
+    color: #FF6701;
+}
+
+ul #btn-login {
+    margin: 0 200px 0 40px;
+}
+
+ul #btn-login a {
+    color: black;
+}
+
+#btn-login i {
+    margin-right: 10px;
+}
+
+#btn-login span:hover {
+    color: grey;
+}
+
+#icon-cart a {
+    color: black;
+}
+
+/* social */
+.social {
+    position: fixed;
+    right: 30px;
+    top: 150px;
+}
+
+.social ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 /* namePage */
 .namePage {
     height: 100px;
     position: relative;
-    margin-bottom: 90px;
+    padding-top: 70px;
+    margin-bottom: 50px;
 }
 
 .namePage p,
@@ -82,24 +125,24 @@
     font-size: 100px;
     font-weight: bold;
     z-index: 10;
-    bottom: -25%;
+    bottom: -16%;
 }
 
 .namePage .underline {
-    height: 14px;
-    width: 520px;
+    height: 10%;
+    width: 40%;
     background: rgb(255, 153, 0);
     bottom: 0;
 }
 
 /* product */
 .product {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
 .product-card {
-    width: 24%;
     padding-bottom: 60px;
     position: relative;
 }
@@ -116,7 +159,7 @@
 .product-card .img a {
     position: absolute;
     bottom: -20%;
-    background-color:#fff;
+    background-color: #fff;
     transition: all 0.5s;
     right: 0;
     text-align: center;
@@ -132,7 +175,7 @@
 }
 
 .product-card .img .img-product-hover {
-    transition: 1s ease;
+    transition: 0.5s ease;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -147,6 +190,11 @@
     opacity: 1;
 }
 
+.product-card .product-title,
+.product-card .price {
+    font-size: 20px;
+}
+
 .product-card .sell {
     width: 95px;
     height: 35px;
@@ -155,7 +203,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -167,7 +215,9 @@
 /* loadmore */
 .loadmore {
     height: 44px;
-    width: 370px;
+    padding: 0 70px;
+    margin-bottom: 20px;
+    font-size: 18px;
     background-color: rgb(255, 60, 0);
     color: white;
     border: none;
@@ -180,54 +230,95 @@
     background-color: rgb(255, 144, 110);
 }
 
-/* footer */
+/* footer/chat */
+
 .footer {
-    margin-top: 80px;   
+    background-color: black;
+    height: 350px;
+    margin: 0px 80px 80px 80px;
+}
+
+.footer #footer-service {
     display: flex;
-    height: 347px;
-    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
 }
 
-.footer ul,
-.footer .footer-sub {
-    padding-top: 80px;
+.footer #footer-service ul {
+    margin-top: 50px;
 }
 
-.footer ul a,
-.footer .footer-sub p {
+.footer #footer-service ul li {
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.footer #footer-service ul li a {
+    text-decoration: none;
     color: white;
 }
 
-.footer ul li,
-.footer .footer-sub p {
-    padding-bottom: 30px;
+.footer #footer-service #footer-service1 {
+    color: white;
+    margin-top: 100px;
 }
 
-.footer-sub input {
+.footer #footer-service #footer-service1 input {
     height: 40px;
     width: 250px;
-}
-
-.footer-sub input {
-    border: none;
-    padding: 0;
-    margin-top: -25px;
-}
-
-.footer-sub .email input {
-    border: 4px solid red;
     background-color: black;
-}
-
-.footer-sub .email input::placeholder {
-    padding-left: 10px;
-    font-size: 16px;
-}
-
-.footer-sub .submit input {
-    background-color: orangered;
+    border: 2px solid white;
     color: white;
-    font-size: 16px;
+}
+
+.footer #footer-service #footer-service1 input::placeholder {
+    color: white;
+    padding-left: 30px;
+}
+
+.footer #footer-service #footer-service1 button {
+    padding: 0;
+    display: flex;
+    margin-top: 5px;
+    border: 1px solid #FF6701;
+    font-size: 15px;
+}
+
+.footer #footer-service #footer-service1 button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    width: 255px;
+    background-color: #FF6701;
+}
+
+.footer #footer-service #footer-service1 button a:hover {
+    background-color: #FFC288;
+}
+
+.chat {
+    height: 60px;
+    width: 200px;
+    border: 0.5px solid rgb(162, 162, 162);
+    background-color: black;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.chat a {
+    text-decoration: none;
+    color: white;
+
 }
 
 ul li {
