@@ -28,3 +28,4 @@ fetch("http://localhost:3000/product")
         }
         console.log("Filtered by type: ", filterItems(data, "men"));
     });
+
