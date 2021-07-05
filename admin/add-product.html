@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -51,50 +50,29 @@
             </div>
         </div>
     </nav>
-    <div class="social">
-        <ul>
-            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
-            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-    </div>
-    <div class="header">
-        <div id="title">
-            <h1>FREE SHIPPING</h1>
-            <p>ON ORDERS OVER $50 - USE COUPON CODE OVER50</p>
+
+        <div class="container" style="margin-bottom:40px">
+          <div class="products" id="products">
+                <form class="add-product" id="add-product" method="POST">
+                    <h1>ADD PRODUCT</h1> 
+                    <br>
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" placeholder="Tên sản phẩm" name="name">
+                    <br>
+                    <label for="">Image</label>
+                    <input type="file" name="image" accept="images/*" required>
+                    <br>
+                    <label for="">Price</label>
+                    <input type="text" class="form-control" placeholder="" name="price">
+                    <label for="">Type</label>
+                    <input type="text" class="form-control" name="type">
+                    <label for="">Description</label>
+                    <textarea name="des" id="" cols="136" rows="10"></textarea>
+                    <button class="btn btn-primary">ADD</button>
+                </form>
         </div>
-        <div id="category">
-            <ul>
-                <li><a href="../women/women.html"><strong>Shop Woman</strong></a></li>
-                <li><a href="../men/men.html"><strong>Shop Men</strong></a></li>
-                <li><a href="../sale/sale.html"><strong>Shop Sale</strong></a></li>
-            </ul>
-        </div>
-        
     </div>
 
-    <div class="banner">
-            <img src="https://static.wixstatic.com/media/ea71bb_ed3d94dce4424884bb453b4045cf66af~mv2_d_1784_1946_s_2.jpg/v1/fill/w_481,h_517,al_c,q_80,usm_0.66_1.00_0.01/ea71bb_ed3d94dce4424884bb453b4045cf66af~mv2_d_1784_1946_s_2.webp" alt="">
-            <img src="https://static.wixstatic.com/media/ea71bb_6982021bfe72428891e04e103b8e2b4a~mv2_d_2001_2211_s_2.jpg/v1/fill/w_481,h_517,al_c,q_80,usm_0.66_1.00_0.01/ea71bb_6982021bfe72428891e04e103b8e2b4a~mv2_d_2001_2211_s_2.webp" alt="" id="img2">
-            <img src="https://static.wixstatic.com/media/ea71bb_9c6c6c058cbc4e4da9eb1876b4c798c6~mv2_d_5122_3415_s_4_2.jpg/v1/fill/w_756,h_517,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_9c6c6c058cbc4e4da9eb1876b4c798c6~mv2_d_5122_3415_s_4_2.webp" alt="">
-    </div>
-    <div class="title">
-        <h1>NEW ARRIVALS</h1>
-        <div id="line"></div>
-    </div>
-    <div class="content">
-            <div class="product" id="product">
-                
-            </div>
-            <div id="btn-all">
-                <p><a href="../shop all/shopAll.html">Shop All</a></p>
-                <div id="click">
-                    <a href=""><i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-        
-    </div>
     <div class="footer">
         <div id="footer-service">
             <ul>
@@ -125,14 +103,10 @@
             </div>
         </div>
     </div>
-    <div class="chat">
-        <a href="">Let's Chat!</a>
-    </div>
 
-<script src="./app.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

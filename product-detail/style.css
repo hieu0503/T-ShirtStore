@@ -3,77 +3,55 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.menu{
-    display: flex;
-    align-items: center;
+.navbar{
     height: 80px;
     margin: 0px 80px 0px 80px;
     line-height: 80px;
-    width: 1744px;
-    margin-bottom: 20px;
-    position: fixed;
-    top: 0;
-    background-color: whitesmoke;
-    z-index: 1;
 }
-.menu .logo{
+.navbar li a{
+    color: black !important;
+    margin-left: 50px;
+}
+.navbar .menu a:hover{
+    color: #FF6701 !important;
+}
+.navbar .menu{
+    display: flex;
+    margin-right: 50px;
+}
+.login {
+    margin-right: 250px;
+    
+}
+.login i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.login span:hover{
+    color: gray !important;
+}
+.cart{
+    font-size: 40px;
+    margin-right: -30px;
+}
+.navbar-branch{
     background-color: black;
     color: white;
-    text-decoration: none;
     font-size: 25px;
     height: 45px;
     line-height: 45px;
     width: 120px;
     text-align: center;
+    margin-left: -30px;
 }
-.menu .logo:hover{
-    color: #FF6701;
-}
-.menu .main-menu ul{
-    display: flex;
-}
-.menu .main-menu ul li{
-    list-style: none;
-}
-.menu .main-menu ul li a{
+.navbar-branch:hover{
+    color: #FF6701 ;
     text-decoration: none;
-    margin-right: 50px;
-}
-ul .option-menu{
-    display: flex;
-    margin-left: 400px;
-}
-ul .option-menu a{
-    color: black;
-    padding-right: 30px;
-}
-ul .option-menu a:hover{
-    color: #FF6701;
-}
-ul .btn-login{
-    margin-right: 230px;
-}
-ul .btn-login a{
-    color: black;
-}
-.btn-login i{
-    margin-right: 10px;
-    font-size: 30px;
-    
-}
-.btn-login span:hover{
-    color: grey;
-}
-.icon-cart a{
-    color: black;
-}
-.icon-cart i{
-    font-size: 35px;
 }
 .footer{
     background-color: black;
     height: 350px;
-    margin: -50px 80px 80px 80px;
+    margin: -100px 80px 80px 80px;
 }
 .footer .footer-service{
     display: flex;
@@ -146,7 +124,7 @@ ul .btn-login a{
     background-color: black;
     position: fixed;
     right: 30px;
-    bottom: 30px;
+    bottom: 20px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -175,6 +153,7 @@ ul .btn-login a{
 }
 .detail{
     display: flex;
+    
 }
 .detail .image{
     position: relative;
@@ -275,7 +254,7 @@ ul .btn-login a{
     margin-bottom: 50px;
 }
 .carousel-inner img{
-    height: 700px;
+    height: 800px;
 }
 .option-color-icon {
     margin: -10px 0px 20px 0px;
@@ -353,4 +332,113 @@ ul .btn-login a{
 .info-content{
     display: none;
     overflow: hidden;
+}
+@media (max-width: 575.98px) {
+    .navbar {
+        width: 375px;
+        padding-left: 30px;
+        height: 60px;
+        display: block;
+        
+    }
+    .header{
+        display: block;
+        width: 375px;
+    }
+    .header #title{
+        font-size: 10px;
+    }
+    .header #category ul li{
+        margin-left: -70px;
+    }
+    .header #category{
+        margin-left: -395px;
+    }
+    .header #category ul {
+        width: 375px;
+    }
+    .header #category a{
+        font-size: 10px;
+    }
+    .banner{
+        height: 950px;
+    }
+    .banner img{
+        width: 375px;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 5px !important;
+    }
+    .social{
+        display: none;
+    }
+    .name span{
+        display: none;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .detail .image p{
+        word-break: break-all;
+        width: 350px;
+        margin-left: 15px;
+
+      
+    }
+    .image .img-product ,.image .img-product-hover{
+        margin-right: 460px;
+        width: 375px;
+        position: static;
+    }
+    .des{
+        width: 375px;
+        margin-right: 510px;
+
+    }
+     h2{
+        margin-left: -450px;
+        font-size: 30px !important;
+    }
+    .carousel-inner{
+        margin-left: -415px ;
+        width: 375px;
+        height: 400px;
+
+    }
+    .carousel-inner img{
+        height: 350px;
+    }
+    .footer{
+        width: 100%;
+        font-size: 15px;
+        height: 1000px;
+        margin-top: -150px ;
+    }
+    .footer .footer-service{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer-service ul {
+        margin-left: 90px;
+    }
+    .footer-service1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .footer-service a{
+        display: flex;
+        justify-content: center;
+    }
+    .chat{
+        width: 150px;
+        position: fixed;
+        height: 50px;
+        margin-right: 435px;
+    }
 }

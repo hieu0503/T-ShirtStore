@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    height: 80px;
+    margin: 0px 80px 0px 80px;
+    line-height: 80px;
+}
+.navbar li a{
+    color: black !important;
+    margin-left: 50px;
+}
+.navbar .menu a:hover{
+    color: #FF6701 !important;
+}
+.navbar .menu{
+    display: flex;
+    margin-right: 50px;
+}
+.login {
+    margin-right: 250px;
+    
+}
+.login i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.login span:hover{
+    color: gray !important;
+}
+.cart{
+    font-size: 40px;
+    margin-right: -30px;
+}
+.navbar-branch{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    height: 45px;
+    line-height: 45px;
+    width: 120px;
+    text-align: center;
+    margin-left: -30px;
+}
+.navbar-branch:hover{
+    color: #FF6701 ;
+    text-decoration: none;
+}
+.footer{
+    background-color: black;
+    height: 350px;
+    margin: 0px 80px 80px 80px;
+}
+.footer #footer-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer #footer-service ul{
+    margin-top: 50px;
+}
+.footer #footer-service ul li{
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.footer #footer-service ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer #footer-service #footer-service1{
+    color: white;
+    margin-top: 50px;
+}
+.footer #footer-service #footer-service1 input{
+    height: 40px;
+    width: 256px;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+}
+.footer #footer-service #footer-service1 input::placeholder{
+    color: white;
+    padding-left: 30px;
+}
+.footer #footer-service #footer-service1 button{
+    display: flex;
+    margin-top: 5px;
+    border: 1px solid #FF6701;
+    font-size: 15px;
+}
+.footer #footer-service #footer-service1 button a{
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 255px;
+    background-color: #FF6701;
+}
+.footer #footer-service #footer-service1 button a:hover{
+    background-color: #FFC288;
+}
+.list-product{
+    margin: 0px 80px 0px 80px;
+}

@@ -3,77 +3,55 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.menu{
-    display: flex;
-    align-items: center;
+.navbar{
     height: 80px;
     margin: 0px 80px 0px 80px;
     line-height: 80px;
-    width: 1744px;
-    margin-bottom: 20px;
-    position: fixed;
-    top: 0;
-    background-color: whitesmoke;
-    z-index: 1;
 }
-.menu .logo{
+.navbar li a{
+    color: black !important;
+    margin-left: 50px;
+}
+.navbar .menu a:hover{
+    color: #FF6701 !important;
+}
+.navbar .menu{
+    display: flex;
+    margin-right: 50px;
+}
+.login {
+    margin-right: 250px;
+    
+}
+.login i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.login span:hover{
+    color: gray !important;
+}
+.cart{
+    font-size: 40px;
+    margin-right: -30px;
+}
+.navbar-branch{
     background-color: black;
     color: white;
-    text-decoration: none;
     font-size: 25px;
     height: 45px;
     line-height: 45px;
     width: 120px;
     text-align: center;
+    margin-left: -30px;
 }
-.menu .logo:hover{
-    color: #FF6701;
-}
-.menu .main-menu ul{
-    display: flex;
-}
-.menu .main-menu ul li{
-    list-style: none;
-}
-.menu .main-menu ul li a{
+.navbar-branch:hover{
+    color: #FF6701 ;
     text-decoration: none;
-    margin-right: 50px;
-}
-ul .option-menu{
-    display: flex;
-    margin-left: 400px;
-}
-ul .option-menu a{
-    color: black;
-    padding-right: 30px;
-}
-ul .option-menu a:hover{
-    color: #FF6701;
-}
-ul .btn-login{
-    margin-right: 230px;
-}
-ul .btn-login a{
-    color: black;
-}
-.btn-login i{
-    margin-right: 10px;
-    font-size: 30px;
-    
-}
-.btn-login span:hover{
-    color: grey;
-}
-.icon-cart a{
-    color: black;
-}
-.icon-cart i{
-    font-size: 35px;
 }
 .header{
     background-color: #FF6701;
     height: 270px;
-    margin: 80px 80px 10px 80px;
+    margin: 0px 80px 10px 80px;
     color: white;
 }
 .header #title {
@@ -88,14 +66,15 @@ ul .btn-login a{
 }
 .header #category ul{
     display: flex;
-    margin-left: 450px;
+    margin-left: 480px;
 }
 .header #category ul li{
     list-style: none;
-    height: 40px;
+    height: 45px;
     width: 200px;
     border: 3px solid white;
     margin-right: 100px;
+    display: block;
 }
 .header #category ul li a{
     display: flex;
@@ -127,45 +106,22 @@ ul .btn-login a{
     background-color: #FF6701;
     height: 10px;
     position: static;
-    margin-top: -30px;
+    margin-top: -40px;
     margin-left: 490px;
 }
 .content{
     margin: 0px 80px 0px 80px;
 }
-/* #products .products-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-#products .products-list li{
-    list-style: none; 
-    margin-bottom: 80px;
-
-}
-#products .products-list li img{
-    margin-bottom: 10px;
-    list-style: none; 
-}
-#products .products-list li a{
-    text-decoration: none;
-    color: black;
-}
-#products .products-list #money{
-    color: #FF6701;
-    margin-top: 10px;
-} */
 .product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
 .product-card {
-    width: 24%;
     padding-bottom: 60px;
     position: relative;
+    
 }
 
 .product-card img {
@@ -180,7 +136,7 @@ ul .btn-login a{
 .product-card .img p a {
     position: absolute;
     bottom: -20%;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     transition: all 0.5s;
     right: 0;
     text-align: center;
@@ -213,6 +169,11 @@ ul .btn-login a{
     opacity: 1;
 }
 
+.product-card .product-title,
+.product-card .price {
+    font-size: 20px;
+}
+
 .product-card .sell {
     width: 95px;
     height: 35px;
@@ -225,11 +186,9 @@ ul .btn-login a{
     justify-content: center;
     align-items: center;
 }
-.product .product-title{
-    margin: 10px 0px 10px 0px;
-}
+
 .product-card .price {
-    color: orange;
+    color: #FF6701;
 }
 .content #btn-all{
     display: flex;
@@ -238,7 +197,7 @@ ul .btn-login a{
 }
 .content #btn-all p{
     width: 200px;
-    height: 40px;
+    height: 44px;
     border: 3px solid #FF6701;
     font-weight: 600;
     
@@ -251,7 +210,7 @@ ul .btn-login a{
     justify-content: center;
 }
 .content #btn-all #click{
-    height: 46px;
+    height: 44px;
     background-color:#FF6701;
     width: 40px;
 }
@@ -295,11 +254,11 @@ ul .btn-login a{
 }
 .footer #footer-service #footer-service1{
     color: white;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .footer #footer-service #footer-service1 input{
     height: 40px;
-    width: 250px;
+    width: 256px;
     background-color: black;
     border: 3px solid white;
     color: white;
@@ -317,10 +276,8 @@ ul .btn-login a{
 .footer #footer-service #footer-service1 button a{
     text-decoration: none;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    line-height: 40px;
+    text-align: center;
     height: 40px;
     width: 255px;
     background-color: #FF6701;
@@ -359,61 +316,120 @@ ul .btn-login a{
     color: white;
     
 }
-/* .menu1 {
-    height: 76px;
-    line-height: 76px;
-    white-space: nowrap;
-    position: fixed;
+.click{
+    height: 100px;
+    width: 50px;
+    background-color: greenyellow;
 }
 
-.header-main {
-    height: 76px;
-    display: flex;
-    align-items: center;
+@media (max-width: 575.98px) {
+    .navbar {
+        width: 375px;
+        padding-left: 30px;
+        height: 60px;
+        display: block;
+        
+    }
+    .header{
+        display: block;
+        width: 375px;
+    }
+    .header #title{
+        font-size: 10px;
+    }
+    .header #category ul li{
+        margin-left: -70px;
+    }
+    .header #category{
+        margin-left: -395px;
+    }
+    .header #category ul {
+        width: 375px;
+    }
+    .header #category a{
+        font-size: 10px;
+    }
+    .banner{
+        height: 950px;
+    }
+    .banner img{
+        width: 375px;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 5px !important;
+    }
+    .social{
+        display: none;
+    }
+    .title{
+        width: 375px !important;
+        height: 70px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .title h1{
+        font-size: 30px;
+        margin-left: 150px;
+    }
+    .title #line{
+        position: static;
+        width: 250px;
+        margin-left: 135px;
+        height: 5px;
+        margin-top: -21px;
+    }
+    .product-card{
+        width: 375px ;
+        display: flex ;
+        flex-direction: column ;
+        margin-bottom: -55px;
+    }
+    .product .img img{
+        width: 375px;
+    }
+    .product .sell{
+        height: 50px;
+        width: 80px;
+        font-size: 15px;
+    }
+     #btn-all{
+        margin-left: 110px;
+    }
+    #btn-all p{
+        width: 180px !important;
+    }
+    #btn-all #click{
+        width: 50px !important;
+        height: 44px !important;
+    }
+    .footer{
+        width: 375px;
+        font-size: 15px;
+        height: 100%;
+        
+    }
+    .footer #footer-service{
+        display: flex;
+        flex-direction: column ;
+        
+    }
+    .footer #footer-service ul {
+        margin-left: 90px;
+    }
+    #footer-service1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer #footer-service a{
+        display: flex;
+        justify-content: center;
+    }
+    .chat{
+        width: 150px;
+        position: fixed;
+        height: 50px;
+        margin-right: 60px;
+    }
 }
-
-.header-main .header-logo {
-    height: 48px;
-    line-height: 48px;
-    white-space: nowrap;
-    width: 98px;
-    background-color: black;
-    text-align: center;
-    margin-left: 0;
-}
-
-.header-main .header-logo p {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.header-main .header-logo p:hover {
-    color: orange;
-}
-
-.navbar,
-.navbar-menu,
-.navbar-log {
-    display: flex;
-}
-
-.navbar-log i {
-    font-size: 25px;
-    padding-right: 10px;
-}
-
-.navbar ul li {
-    margin-right: 60px;
-}
-
-.navbar ul li a:hover {
-    color: orange;
-}
-
-.header-cart {
-    font-size: 35px;
-    margin-right: 0;
-} */
-
-
