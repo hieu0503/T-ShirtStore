@@ -1,23 +1,239 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .about .container {
-    max-width: 1704px !important;
-    margin: 50px;
-  }
-  
-  .about .container .row .top {
-    padding-top: 50px;
-    border-bottom: 8px solid orange;
-    z-index: 1;
-    height: 98px;
-    display: block;
-  }
-  .about .container .row .top h1 {
-    font-size: 50px;
-    margin: 0 0 -20px;
-    z-index: 2;
-  }
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 1290px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+.layout-1 {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.line-under-bigtext {
+  border: 1px solid orangered;
+  background: orangered;
+  min-height: 12px;
+  position: absolute;
+  bottom: 21px;
+  width: 530px;
+  z-index: -1;
+}
+.big-text {
+  text-align: center;
+}
+.big-text h1 {
+  letter-spacing: 0.02em;
+  font-size: 110px;
+  margin: 0;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.dot-block {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.dot {
+  background-color: orangered;
+  width: 10px;
+  height: 10px;
+}
+.mid-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.mid {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.bot-text {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+form input {
+  border: 2px solid orangered;
+  height: 40px;
+  width: 300px;
+}
+form button {
+  color: white;
+  height: 40px;
+  width: 120px;
+  background-color: orangered;
+  border: 2px solid orangered;
+}
+form input:hover {
+  background-color: orange;
+}
+::placeholder {
+  color: orangered;
+}
+/* Header */
+.menu {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin: 0px 80px 0px 80px;
+  line-height: 80px;
+  width: 1744px;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  background-color: whitesmoke;
+}
+.menu .logo {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  height: 45px;
+  line-height: 45px;
+  width: 120px;
+  text-align: center;
+}
+.menu .logo:hover {
+  color: #ff6701;
+}
+.menu #main-menu ul {
+  display: flex;
+}
+.menu #main-menu ul li {
+  list-style: none;
+}
+.menu #main-menu ul li a {
+  text-decoration: none;
+  margin-right: 50px;
+}
+ul #menu1 {
+  display: flex;
+  margin-left: 400px;
+}
+ul #menu1 a {
+  color: black;
+  padding-right: 30px;
+}
+ul #menu1 a:hover {
+  color: #ff6701;
+}
+ul #btn-login {
+  margin: 00px 200px 0px 40px;
+}
+ul #btn-login a {
+  color: black;
+}
+#btn-login i {
+  margin-right: 10px;
+}
+#btn-login span:hover {
+  color: grey;
+}
+#icon-cart a {
+  color: black;
+}
+/* Footer */
+.footer {
+  background-color: black;
+  height: 350px;
+  margin: 0px 80px 80px 80px;
+}
+.footer #footer-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer #footer-service ul {
+  margin-top: 50px;
+}
+.footer #footer-service ul li {
+  list-style: none;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+.footer #footer-service ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer #footer-service #footer-service1 {
+  color: white;
+  margin-top: 100px;
+}
+.footer #footer-service #footer-service1 input {
+  height: 40px;
+  width: 250px;
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+}
+.footer #footer-service #footer-service1 input::placeholder {
+  color: white;
+  padding-left: 30px;
+}
+.footer #footer-service #footer-service1 button {
+  display: flex;
+  margin-top: 5px;
+  border: 1px solid #ff6701;
+  font-size: 15px;
+}
+.footer #footer-service #footer-service1 button a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  width: 255px;
+  background-color: #ff6701;
+}
+.footer #footer-service #footer-service1 button a:hover {
+  background-color: #ffc288;
+}
+.social {
+  position: fixed;
+  right: 30px;
+  top: 150px;
+}
+.social ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+.social ul li a {
+  text-decoration: none;
+  color: black;
+}
+.chat {
+  height: 60px;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 550;
+}
+.chat a {
+  text-decoration: none;
+  color: white;
+}
