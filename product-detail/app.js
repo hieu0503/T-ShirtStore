@@ -40,6 +40,7 @@ for (let i = 0 ; i< collapse.length; i++) {
     
 }
 
+
 // api show product
 const product = document.getElementById("product");
 
@@ -64,3 +65,4 @@ fetch("http://localhost:3000/product")
         `;
         }
     });
+

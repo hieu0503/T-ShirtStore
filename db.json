@@ -1,22 +1,108 @@
 {
-    "product": [
-      { "id": 1, "type": "men", "img": "../image/all1.webp", "imgHover": "../image/all1.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 2, "type": "men", "img": "../image/all2.webp", "imgHover": "../image/all2.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 3, "type": "women", "img": "../image/all3.webp", "imgHover": "../image/all3.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 4, "type": "women", "img": "../image/all4.webp", "imgHover": "../image/all4.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 5, "type": "men", "img": "../image/men1.webp", "imgHover": "../image/men1.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 6, "type": "men", "img": "../image/men2.webp", "imgHover": "../image/men2.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 7, "type": "men", "img": "../image/men3.webp", "imgHover": "../image/men3.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 8, "type": "men", "img": "../image/men4.webp", "imgHover": "../image/men4.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 9, "type": "women", "img": "../image/sale1.webp", "imgHover": "../image/sale1.2.webp", "title": "I'm a product", "price-old": 30, "price": 25, "sell": "true"},
-      { "id": 10, "type": "men", "img": "../image/sale2.webp", "imgHover": "../image/sale2.2.webp", "title": "I'm a product", "price-old": 27, "price": 23, "sell": "true"},
-      { "id": 11, "type": "men", "img": "../image/sale3.webp", "imgHover": "../image/sale3.2.webp", "title": "I'm a product", "price-old": 30, "price": 25, "sell": "true"},
-      { "id": 12, "type": "women", "img": "../image/sale4.webp", "imgHover": "../image/sale4.2.webp", "title": "I'm a product", "price-old": 32, "price": 27, "sell": "true"},
-      { "id": 13, "type": "women", "img": "../image/women1.webp", "imgHover": "../image/women1.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 14, "type": "women", "img": "../image/women2.webp", "imgHover": "../image/women2.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 15, "type": "women", "img": "../image/women3.webp", "imgHover": "../image/women3.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""},
-      { "id": 16, "type": "women", "img": "../image/women4.webp", "imgHover": "../image/women4.2.webp", "title": "I'm a product", "price-old": "", "price": 25, "sell": ""}
-      
-    ]
-    
+  "product": [
+    {
+      "id": 1,
+      "type": "men",
+      "img": "../image/all1.webp",
+      "imgHover": "../image/all1.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": "Best Seller",
+      "des": ""
+    },
+    {
+      "id": 2,
+      "type": "men",
+      "img": "../image/all2.webp",
+      "imgHover": "../image/all2.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": "Best Seller",
+      "des": ""
+    },
+    {
+      "id": 3,
+      "type": "women",
+      "img": "../image/all3.webp",
+      "imgHover": "../image/all3.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": "Best Seller",
+      "des": ""
+    },
+    {
+      "id": 4,
+      "type": "women",
+      "img": "../image/all4.webp",
+      "imgHover": "../image/all4.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": "Best Seller",
+      "des": ""
+    },
+    {
+      "id": 5,
+      "type": "men",
+      "img": "../image/men1.webp",
+      "imgHover": "../image/men1.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": "Best Seller"
+    },
+    {
+      "id": 6,
+      "type": "men",
+      "img": "../image/men2.webp",
+      "imgHover": "../image/men2.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": ""
+    },
+    {
+      "id": 7,
+      "type": "men",
+      "img": "../image/men3.webp",
+      "imgHover": "../image/men3.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": ""
+    },
+    {
+      "id": 8,
+      "type": "men",
+      "img": "../image/men4.webp",
+      "imgHover": "../image/men4.2.webp",
+      "title": "I'm a product",
+      "price-old": "",
+      "price": "$25.00",
+      "sell": ""
+    },
+    {
+      "id": 9,
+      "type": "women",
+      "img": "../image/sale1.webp",
+      "imgHover": "../image/sale1.2.webp",
+      "title": "I'm a product",
+      "price-old": 30,
+      "price": "$25.00",
+      "sell": "Best Seller"
+    },
+    {
+      "id": 10,
+      "type": "men",
+      "img": "../image/sale2.webp",
+      "imgHover": "../image/sale2.2.webp",
+      "title": "I'm a product",
+      "price-old": 27,
+      "price": "$25.00",
+      "sell": ""
+    }
+  ]
 }
