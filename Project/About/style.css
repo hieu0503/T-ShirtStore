@@ -180,3 +180,137 @@ ul #btn-login a {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 576px) {
+  .navbar {
+    width: 375px;
+    padding-left: 30px;
+    height: 60px;
+    display: block;
+  }
+  .header {
+    display: block;
+    width: 375px;
+  }
+  .header #title {
+    font-size: 10px;
+  }
+  .header #category ul li {
+    margin-left: -70px;
+  }
+  .header #category {
+    margin-left: -395px;
+  }
+  .header #category ul {
+    width: 375px;
+  }
+  .header #category a {
+    font-size: 10px;
+  }
+  .banner {
+    height: 950px;
+  }
+  .banner img {
+    width: 375px;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 5px !important;
+  }
+  .social {
+    display: none;
+  }
+  .title {
+    width: 375px !important;
+    height: 70px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .title h1 {
+    font-size: 30px;
+    margin-left: 150px;
+  }
+  .title #line {
+    position: static;
+    width: 250px;
+    margin-left: 135px;
+    height: 5px;
+    margin-top: -21px;
+  }
+  .product-card {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -55px;
+  }
+  .product .img img {
+    width: 375px;
+  }
+  .product .sell {
+    height: 50px;
+    width: 80px;
+    font-size: 15px;
+  }
+  #btn-all {
+    margin-left: 110px;
+  }
+  #btn-all p {
+    width: 180px !important;
+  }
+  #btn-all #click {
+    width: 50px !important;
+    height: 44px !important;
+  }
+  .footer {
+    width: 375px;
+    font-size: 15px;
+    height: 100%;
+  }
+  .footer #footer-service {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer #footer-service ul {
+    margin-left: 90px;
+  }
+  #footer-service1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer #footer-service a {
+    display: flex;
+    justify-content: center;
+  }
+  .chat {
+    width: 150px;
+    position: fixed;
+    height: 50px;
+    margin-right: 60px;
+  }
+  .menu {
+    display: flex;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .bottom-left {
+    margin: 0px;
+    width: 80%;
+  }
+  img {
+    width: 180%;
+  }
+  .footer #footer-service {
+    display: block;
+  }
+  .footer {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
