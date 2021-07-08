@@ -7,7 +7,7 @@ fetch("http://localhost:3000/product")
         for (const key of data) {
             product.innerHTML += `
             <div class="product-card" id="product-card">
-                <p class="id">${key.id}</p>
+                
                 <div class="img">
                 <img class="img-product" src="${key.img}" alt="">
                 <img class="img-product-hover" src="${key.imgHover}" alt="">
