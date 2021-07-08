@@ -7,9 +7,10 @@
       "imgHover": "../image/all1.2.webp",
       "title": "I'm a product",
       "price-old": "",
-      "price": "$25.00",
+      "price": 25,
       "sell": "Best Seller",
-      "des": ""
+      "des": "",
+      "cart": 1
     },
     {
       "id": 2,
@@ -81,26 +82,6 @@
       "imgHover": "../image/men4.2.webp",
       "title": "I'm a product",
       "price-old": "",
-      "price": "$25.00",
-      "sell": ""
-    },
-    {
-      "id": 9,
-      "type": "women",
-      "img": "../image/sale1.webp",
-      "imgHover": "../image/sale1.2.webp",
-      "title": "I'm a product",
-      "price-old": 30,
-      "price": "$25.00",
-      "sell": "Best Seller"
-    },
-    {
-      "id": 10,
-      "type": "men",
-      "img": "../image/sale2.webp",
-      "imgHover": "../image/sale2.2.webp",
-      "title": "I'm a product",
-      "price-old": 27,
       "price": "$25.00",
       "sell": ""
     }
