@@ -378,10 +378,13 @@
         height: 5px;
         margin-top: -21px;
     }
+    .product{
+        display: flex !important ;
+        flex-direction: column !important;
+        
+    }
     .product-card{
-        width: 375px ;
-        display: flex ;
-        flex-direction: column ;
+        width: 375px !important;
         margin-bottom: -55px;
     }
     .product .img img{
