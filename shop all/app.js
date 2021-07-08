@@ -6,7 +6,8 @@ fetch("http://localhost:3000/product")
     .then((data) => {
         for (const key of data) {
             product.innerHTML += `
-            <div class="product-card">
+            <div class="product-card" id="product-card">
+                <p class="id">${key.id}</p>
                 <div class="img">
                 <img class="img-product" src="${key.img}" alt="">
                 <img class="img-product-hover" src="${key.imgHover}" alt="">
@@ -23,9 +24,19 @@ fetch("http://localhost:3000/product")
 fetch("http://localhost:3000/product")
     .then((response) => response.json())
     .then((data) => {
-        function filterItems(items, searchVal) {
-            return items.filter((item) => Object.values(item).includes(searchVal));
+        for (let key of data) {
+            let productCard = document.getElementById("product-card");
+            // productCard.onclick = function(id) {
+            productCard.onclick = function(id) {
+                fetch(`http://localhost:3000/product/${key.id}`, { 
+                    method: 'GET'
+                })
+                
+                localStorage.setItem("myValue", JSON.stringify(id));
+                window.location.href = "../product-detail/index.html";
+            }
+
+            
         }
-        console.log("Filtered by type: ", filterItems(data, "men"));
     });
 

@@ -151,6 +151,10 @@
 .products-detail .name span{
     color: grey;
 }
+.name i{
+    font-size: 20px;
+    padding: 2px 5px 0px 5px;
+}
 .detail{
     display: flex;
     

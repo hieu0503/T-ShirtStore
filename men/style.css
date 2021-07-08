@@ -328,3 +328,50 @@ ul li {
 a {
     text-decoration: none;
 }
+
+@media (max-width: 1200px) {
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* grid-gap: 30px; */
+    }
+  }
+  @media (max-width: 600px) {
+    .product {
+      display: grid;
+      grid-template-columns: 1fr;
+      /* grid-gap: 30px; */
+    }
+    .footer {
+      margin: 0px;
+      width: 100%;
+    }
+    /* namePage */
+    .namePage {
+      height: 100px;
+      position: relative;
+      padding-top: 100px;
+      margin-bottom: 50px;
+    }
+  
+    .namePage p,
+    .namePage div {
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+  
+    .namePage p {
+      font-size: 40px;
+      font-weight: bold;
+      z-index: 10;
+      bottom: -16%;
+    }
+  
+    .namePage .underline {
+      height: 5%;
+      width: 50%;
+      background: rgb(255, 153, 0);
+      bottom: -25px;
+    }
+  }
