@@ -10,7 +10,7 @@ fetch("http://localhost:3000/product")
         }
         console.log("Filtered by type: ", filterItems(data, "men"));
         
-        for (const key of filterItems(data, "sale")) {
+        for (const key of filterItems(data, "true")) {
             product.innerHTML += `
             <div class="product-card">
                 <div class="img">
