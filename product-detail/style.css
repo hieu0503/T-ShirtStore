@@ -151,6 +151,10 @@
 .products-detail .name span{
     color: grey;
 }
+.name i{
+    font-size: 20px;
+    padding: 2px 5px 0px 5px;
+}
 .detail{
     display: flex;
     
@@ -341,34 +345,6 @@
         display: block;
         
     }
-    .header{
-        display: block;
-        width: 375px;
-    }
-    .header #title{
-        font-size: 10px;
-    }
-    .header #category ul li{
-        margin-left: -70px;
-    }
-    .header #category{
-        margin-left: -395px;
-    }
-    .header #category ul {
-        width: 375px;
-    }
-    .header #category a{
-        font-size: 10px;
-    }
-    .banner{
-        height: 950px;
-    }
-    .banner img{
-        width: 375px;
-        margin: 0 !important;
-        padding: 0 !important;
-        margin-bottom: 5px !important;
-    }
     .social{
         display: none;
     }
@@ -380,6 +356,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: -150px;
         
     }
     .detail .image p{
@@ -440,5 +417,12 @@
         position: fixed;
         height: 50px;
         margin-right: 435px;
+    }
+    .nav{
+        display: none;
+    }
+    .name p a{
+        margin: -130px 0px 0px -415px;
+        position: absolute;
     }
 }

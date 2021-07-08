@@ -1,3 +1,4 @@
+
 const product=document.getElementById("product");
 const cmt = document.getElementById("comment");
 const sum = document.getElementById("summary"); 

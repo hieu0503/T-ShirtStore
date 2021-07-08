@@ -42,27 +42,27 @@ for (let i = 0 ; i< collapse.length; i++) {
 
 
 // api show product
-const product = document.getElementById("product");
+// const product = document.getElementById("product");
 
-fetch("http://localhost:3000/product")
-    .then((response) => response.json())
-    .then((data) => {
+// fetch("http://localhost:3000/product")
+//     .then((response) => response.json())
+//     .then((data) => {
         
-        for (const key of data) {
-            // key = Storage.getItem(key);
-            // let a = localStorage.getItem("myValue");
-            product.innerHTML += `
-            <div class="product-card" id="product-card">
-                <div>${key.id}</div>
-                <div class="image">
-                <img class="img-product" src="${key.img}" alt="">
-                <img class="img-product-hover" src="${key.imgHover}" alt="">
-            </div>
-            <div class="des">
-                <h1>${key.title}</h1>
-                <p class="price">${key.price}</p>
-            </div>
-        `;
-        }
-    });
+//         for (const key of data) {
+//             // key = Storage.getItem(key);
+//             // let a = localStorage.getItem("myValue");
+//             product.innerHTML += `
+//             <div class="product-card" id="product-card">
+//                 <div>${key.id}</div>
+//                 <div class="image">
+//                 <img class="img-product" src="${key.img}" alt="">
+//                 <img class="img-product-hover" src="${key.imgHover}" alt="">
+//             </div>
+//             <div class="des">
+//                 <h1>${key.title}</h1>
+//                 <p class="price">${key.price}</p>
+//             </div>
+//         `;
+//         }
+//     });
 
